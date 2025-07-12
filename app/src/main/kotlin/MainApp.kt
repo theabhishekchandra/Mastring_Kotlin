@@ -19,6 +19,8 @@ fun main() {
         // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
         println("i = $i")
     }
+    val dog: Dog = Yorkshire()
+    dog.sayHello()
 
 
 }
@@ -70,4 +72,18 @@ class  MutableStack<T>(vararg item : T){
 
 fun <T> getFirst(items : List<T>) : T {
     return items[0]
+}
+
+/** Inheritance -> Kotlin fully supports the traditional object-oriented inheritance mechanism.*/
+
+open class Dog(){
+    open fun sayHello(){
+        println("WOW WOW!")
+    }
+}
+
+class Yorkshire : Dog() {
+    override fun sayHello(){
+        println("Wif Wif!")
+    }
 }
