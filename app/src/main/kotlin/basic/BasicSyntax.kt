@@ -10,7 +10,16 @@ package org.abhishek.app.basic
 fun main(){
     /** Print to the standard output */
     println("Hello, world! (with new line)") // Print all Statements in new line.
-    print("Hello, world!") // Print all Statements in same line.
+    println("Hello, world!") // Print all Statements in same line.
+    val fruit = listOf<String>("Mango", "Hangzhou","Apple","Banana", "Orange", "Pineapple","Strawberry")
+
+//    for (i in 1..fruit.size) {
+    for ((index, element) in fruit.withIndex()) {
+
+        print(index)
+        print(" ")
+        println(element)
+    }
 
 }
 
@@ -54,7 +63,7 @@ class Rectangle(val height: Double, val length: Double): Shape() {
 //    }else{
 //        return b
 //    }
-// //Both are same but we can use as need.
+// //Both are same, but we can use as need.
 //}
 fun maxOf(a: Int, b: Int): Int = if (a > b) a else b
 
@@ -62,6 +71,25 @@ fun maxOf(a: Int, b: Int): Int = if (a > b) a else b
 
 
 
-/** Print to the standard output */
+/** Any, Unit, Nothing */
+//  Any -> The supertype of all non-nullable types.
+
+fun printValue(value: Any) {
+    println(value)
+}
+
+// Unit -> The return type of function that returns no meaningful value. (Equivalent to void in Java, but it's an actual type (singleton).)
+
+fun sayHello(): Unit {
+    println("Hello!")
+}
+
+// Nothing -> Represents a type with no value. (Used to signal that a function never returns normally (e.g., always throws exception or exits the program))
+
+fun fail(message: String): Nothing {
+    throw IllegalStateException(message)
+}
+
+
 /** Print to the standard output */
 /** Print to the standard output */

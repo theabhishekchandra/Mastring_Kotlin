@@ -5,17 +5,17 @@ class CollectionInKotlin {
     /** List -> A list is an ordered collection of items. In Kotlin, lists can be either mutable (MutableList) or read-only (List). For list creation, use the standard library functions listOf() for read-only lists and mutableListOf() for mutable lists. To prevent unwanted modifications, obtain read-only views of mutable lists by casting them to List.*/
 
     // MutableList
-    val systemInputs : MutableList<Int> = mutableListOf<Int>(1,2,3,4,5)
-
-    // Immutable (Read Only)
-    val sudoInputs : List<Int> = systemInputs
-
-    fun addNewSystemInputs(input : Int)  {
-        systemInputs.add(input)
-    }
-    fun getSystemInputs() : List<Int> {
-        return systemInputs
-    }
+//    val systemInputs : MutableList<Int> = mutableListOf<Int>(1,2,3,4,5)
+//
+//    // Immutable (Read Only)
+//    val sudoInputs : List<Int> = systemInputs
+//
+//    fun addNewSystemInputs(input : Int)  {
+//        systemInputs.add(input)
+//    }
+//    fun getSystemInputs() : List<Int> {
+//        return systemInputs
+//    }
 
     /** Set -> A set is an unordered collection that does not support duplicates. For creating sets, there are functions setOf() and mutableSetOf(). A read-only view of a mutable set can be obtained by casting it to Set.*/
 
