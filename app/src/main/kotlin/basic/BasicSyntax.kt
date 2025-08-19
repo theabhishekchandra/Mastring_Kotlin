@@ -8,18 +8,18 @@ package org.abhishek.app.basic
 }*/
 // or
 fun main(){
-    /** Print to the standard output */
-    println("Hello, world! (with new line)") // Print all Statements in new line.
-    println("Hello, world!") // Print all Statements in same line.
-    val fruit = listOf<String>("Mango", "Hangzhou","Apple","Banana", "Orange", "Pineapple","Strawberry")
-
-//    for (i in 1..fruit.size) {
-    for ((index, element) in fruit.withIndex()) {
-
-        print(index)
-        print(" ")
-        println(element)
-    }
+//    /** Print to the standard output */
+//    println("Hello, world! (with new line)") // Print all Statements in new line.
+//    println("Hello, world!") // Print all Statements in same line.
+//    val fruit = listOf<String>("Mango", "Hangzhou","Apple","Banana", "Orange", "Pineapple","Strawberry")
+//
+////    for (i in 1..fruit.size) {
+//    for ((index, element) in fruit.withIndex()) {
+//
+//        print(index)
+//        print(" ")
+//        println(element)
+//    }
 
 }
 
@@ -89,6 +89,7 @@ fun sayHello(): Unit {
 fun fail(message: String): Nothing {
     throw IllegalStateException(message)
 }
+
 
 
 /** Print to the standard output */
